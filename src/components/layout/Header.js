@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -6,35 +7,34 @@ const Header = () => {
       style={{ height: "10vh" }}
       className="flex justify-between items-center bg-indigo-800 text-white"
     >
-      <a
+      <Link
         className="ml-4 hover:text-black"
         style={{ fontSize: "1.5em" }}
-        href="#"
+        to="/"
       >
         Snippet
-      </a>
+      </Link>
 
       <ul className="mr-4 flex align-center">
         <li className="m-auto inline p-4 hover:text-black">
-          <a href="">Tech</a>
+          <Link to="/category/tech">Tech</Link>
         </li>
         <li className="m-auto inline p-4 hover:text-black">
-          <a href="">Culture</a>
+          <Link to="/category/culture">Culture</Link>
         </li>
         <li className="m-auto inline p-4 hover:text-black">
-          {" "}
-          <a href="">Sports</a>{" "}
+          <Link to="/category/sports">Sports</Link>
         </li>
         <li className="m-auto inline p-4 hover:text-black">
-          <a href="">Politics & Society</a>{" "}
+          <Link to="/category/society">Politics & Society</Link>
         </li>
         <li className="m-auto inline p-4 hover:text-black">
-          <a
-            href="#"
-            class="bg-indigo-500 hover:bg-indigo-900 text-white font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+          <Link
+            to="/library"
+            className="bg-indigo-500 hover:bg-indigo-900 text-white font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
           >
             Library
-          </a>
+          </Link>
         </li>
         <li className="inline p-4 hover:text-black">
           <div
